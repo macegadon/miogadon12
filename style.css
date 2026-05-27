@@ -1,0 +1,113 @@
+/* this is a css style sheet, the syntax for a comment in CSS is different because it's a separate language to HTML */
+/* below I am calling all the different HTML elements that I have used in the page and describing how it should be rendered on screen within the {curly brackets}. */
+body {
+    background-image: url("download.png");
+    background-color: #cccccc; /*Fallback color*/
+    background-size: cover;
+    color: rgb(55, 33, 127);
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+h1 {
+    color: rgb(114, 13, 50);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+
+h2 {
+    color: rgb(114, 13, 50);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+h3 {
+    color: rgb(174, 0, 218);
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+p {
+    color: rgb(90, 68, 165);
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: relative; 
+}
+li {
+    margin-top: px;
+}
+
+/* to call a class put a . before its name */
+.newacronym{
+    color: aquamarine;
+}
+
+.box{
+       transition: ease 1s;
+    }
+    .box:hover{
+        transform: rotate(360deg);
+    }
+
+.box1 {
+    margin: 1em;
+    border: thick double  rgb(241, 162, 191);
+    padding: 1em;
+        font-family:'Courier New', Courier, monospace;
+        margin-left: 1em;
+        margin-right: 1em;
+    
+}
+  .inner {
+    background: #eecbff;
+        font-family:'Courier New', Courier, monospace;
+        margin-left: 1em;
+        margin-right: 1em;
+  }
+ .hidden {
+    height: auto;
+    width: 300px;
+    display: none
+  }
+  .inner:hover img {
+    display: block;
+    width: 568px;
+    height: 168px;
+        font-family:'Courier New', Courier, monospace;
+  }
+
+
+@keyframes alicia {
+    0% {transform: translate(80px, -80px);}
+    25% {transform: translate(120px, 120px);}
+    75% {transform: translate(100px, -100px);}
+    100% {transform: translate(150px, 150px);}
+  }
+    .gallery {
+        animation: alicia 5s infinite;
+    }
+
+@keyframes alicia2 {
+    0% {transform: translate(20px, -20px);}
+    25% {transform: translate(60px, 60px);}
+    75% {transform: translate(10px, -10px);}
+    100% {transform: translate(50px, 50px);}
+  }
+    .gallery2 {
+        animation: alicia2 5s infinite;
+    }
